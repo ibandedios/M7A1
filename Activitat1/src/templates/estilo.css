@@ -1,0 +1,28 @@
+*{
+    background-color: aquamarine;
+}
+h1{
+    color:indigo;
+}
+form{
+    border:1px solid black;
+    background-color: hotpink;
+    padding-left: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+
+
+p{
+    background-color: hotpink;
+}
+.button{
+    border:none;
+    cursor:pointer;
+}
+.fondoNormal{
+    background-color: aquamarine;
+}
