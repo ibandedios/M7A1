@@ -14,7 +14,7 @@
     $consulta = $gdb->prepare($query);
     $consulta->execute();
     //cuando se ejecute todo te manda al home
-    header('Location:?url=home');
+    header('Location:?url=dashboard');
     //si hay algun error porque el email no se puede repetir en la base de datos,
     //se tiene que repetir el registro
     }
