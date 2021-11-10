@@ -25,7 +25,7 @@ CREATE TABLE `taskItem` (
   `list_id` int(11) NOT NULL,
   `nombreItem` varchar(50) DEFAULT NULL,
   `completed` tinyint(1) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
   KEY `fk_list` (`list_id`),
   CONSTRAINT `fk_list` FOREIGN KEY (`list_id`) REFERENCES `tarea` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
