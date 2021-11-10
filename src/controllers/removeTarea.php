@@ -4,8 +4,9 @@
     require APP.'/src/controllers/funciones.php';
     require APP.'/conn.php';
 
+    try{
     $remTarea=$_POST['remTarea'];
-    $remTarea = '"'.$remTarea.'"';
+    //$remTarea = '"'.$remTarea.'"';
     $email = $_COOKIE['iduser'];
     $id = returnIDTarea($gdb, $email, $remTarea);
 
@@ -25,3 +26,7 @@
     
     
     header('Location:?url=tareas');
+}
+catch(PDOException $e){
+    header('Location:?url=remTarea');
+}

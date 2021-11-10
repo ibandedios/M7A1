@@ -54,6 +54,7 @@ function mostrarEjercicios($gdb, $idlist){
 
 
 function eliminarTarea($gdb, $remTarea){
+    $remTarea = '"'.$remTarea.'"';
     $query = "DELETE FROM tarea WHERE nomTarea = $remTarea";
     $consulta = $gdb->prepare($query);
     $consulta->execute();
