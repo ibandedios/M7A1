@@ -43,7 +43,8 @@
                 setcookie("fechasession",$last_session,0,"/","localhost");
                 setcookie("fechaultimases",date("Y:m:d h:i:s A'"),0,"/","localhost");
             }
-            //cuando se ejecute todo lo del login te manda al dashboard   
+            //cuando se ejecute todo lo del login te manda al dashboard
+                setcookie("iduser",$user['email'],0,"/","localhost");
                 header('Location:?url=dashboard');
             }
             // si las contraseñas no son iguales te manda al login

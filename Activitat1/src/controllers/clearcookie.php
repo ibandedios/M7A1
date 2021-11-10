@@ -5,9 +5,16 @@ if (isset($_COOKIE['datosEmail'])){
          if($_COOKIE['datosEmail']!=NULL){
             //te reemplaza los datos como FALSE
             setcookie('datosEmail',FALSE,0,"/","localhost");
-            header('Location:?url=home');
+            
          }
       }
-      else{
-         header('Location:?url=home');
-      }
+
+         
+
+if (isset($_COOKIE['tareas'])){
+   if($_COOKIE['tareas']!=NULL){
+      //te reemplaza los datos como FALSE
+      setcookie('tareas',FALSE,0,"/","localhost");
+   }
+}
+header('Location:?url=home');
